@@ -16,7 +16,7 @@ const User = require('./models/user')
 const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require("helmet");
 const url = require('./url');
-const db_url = process.env.db_url || "mongodb://localhost:27017/yelp-camp"
+const db_url = process.env.db_url;
 const MongoStore = require('connect-mongo');
 
 // const MongoDBStore = require("connect-mongo")
