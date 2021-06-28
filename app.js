@@ -54,7 +54,7 @@ app.use(
 const sessionConfig = {
     store: MongoStore.create({
         mongoUrl: db_url,
-        secret: process.enc.SECRET || 'ashish0',
+        secret: process.env.SECRET || 'ashish0',
         touchAfter: 24 * 60 * 60
     }),
     name: 'cok',
